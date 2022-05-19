@@ -51,3 +51,5 @@ FlexboxLayoutManager layoutManager = new FlexboxLayoutManager();
 更多设置:
 
 https://www.jianshu.com/p/b3a9c4a99053
+
+https://github.com/google/flexbox-layout

@@ -76,3 +76,27 @@ ViewPager是设置中间的那个item的宽高,以及中间的item距离左边�
     }
 ~~~~
 
+但是这样写，会导致中间item的两侧，两个显示出一半的item左右滑动不了，只有在中间item上边可以左右滑动，解决方案如下：
+
+~~~xml
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/card_bg"
+        android:clipChildren="false"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_become_member"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:clipToPadding="false"
+            />
+
+    </FrameLayout>
+~~~
+
